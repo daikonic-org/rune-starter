@@ -10,3 +10,17 @@ targets:
   schema:
     generator: json-schema
     output: generated/schema
+overrides:
+  - kind: resource
+    source:
+      model: local
+      id: example.starter.CurrencyCode#RosettaTypeAlias
+    path: resources/currency.json
+    codeList:
+      format: json
+    provenance:
+      model: currency-list
+      repository: https://github.com/umpirsky/currency-list
+      release: 4ab0b8244b44aa41fc859809e90d6e9fe00ae59e
+      commit: 4ab0b8244b44aa41fc859809e90d6e9fe00ae59e
+      path: data/en/currency.json
